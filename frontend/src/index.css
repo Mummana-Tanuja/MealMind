@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-page: #f7fff8;
+  --color-page-warm: #fff8ed;
+  --color-surface: #ffffff;
+  --color-surface-soft: rgba(255, 255, 255, 0.78);
+  --color-text: #17211b;
+  --color-muted: #5c6f63;
+  --color-primary: #1f6f3b;
+  --color-primary-dark: #18572f;
+  --color-primary-soft: rgba(31, 111, 59, 0.1);
+  --color-primary-border: rgba(31, 111, 59, 0.16);
+  --color-accent: #dd7a25;
+  --color-danger: #b42318;
+  --color-danger-bg: #fff0ed;
+  --color-success: #237a34;
+  --color-success-bg: #edf9ef;
+  --shadow-soft: 0 20px 50px rgba(43, 66, 49, 0.14);
+  --shadow-button: 0 12px 24px rgba(31, 111, 59, 0.22);
+  --radius-card: 24px;
+  --radius-control: 10px;
+  --font-main: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--color-page);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Dashboard responsive grid */
+.dashboard-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .dashboard-main-grid {
+    grid-template-columns: 1fr;
+  }
+}

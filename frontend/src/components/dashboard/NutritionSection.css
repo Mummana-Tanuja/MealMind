@@ -1,0 +1,201 @@
+/* ── Nutrition Card ─────────────────────────────────── */
+.nutrition-card {
+  background: #ffffff;
+  border: 1px solid rgba(31, 111, 59, 0.12);
+  border-radius: 20px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 4px 24px rgba(43, 66, 49, 0.08);
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.nutrition-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.nutrition-card__title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #17211b;
+  margin: 0;
+}
+
+.nutrition-card__date {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #5c6f63;
+  background: rgba(47, 143, 78, 0.08);
+  border: 1px solid rgba(47, 143, 78, 0.15);
+  padding: 3px 12px;
+  border-radius: 20px;
+}
+
+/* ── Body: vertical stack ── */
+.nutrition-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+/* ── Calorie Ring ── */
+.calorie-ring-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.calorie-ring-svg {
+  display: block;
+  filter: drop-shadow(0 4px 14px rgba(47, 143, 78, 0.18));
+}
+
+.calorie-ring-center {
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.calorie-ring-num {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #17211b;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.calorie-ring-unit {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #5c6f63;
+  margin-top: 2px;
+}
+
+.calorie-ring-label {
+  font-size: 0.65rem;
+  color: #5c6f63;
+  margin-top: 1px;
+}
+
+/* Stats row below ring */
+.calorie-ring-stats {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: rgba(47, 143, 78, 0.05);
+  border: 1px solid rgba(47, 143, 78, 0.12);
+  border-radius: 14px;
+  padding: 10px 0;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.crs-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+}
+
+.crs-val {
+  font-size: 0.95rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.crs-lbl {
+  font-size: 0.65rem;
+  color: #5c6f63;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.crs-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(47, 143, 78, 0.15);
+}
+
+/* ── Macro bars ── */
+.macro-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.macro-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.macro-item__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.macro-item__dot-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.macro-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.macro-label {
+  font-size: 0.83rem;
+  font-weight: 700;
+  color: #17211b;
+}
+
+.macro-vals {
+  font-size: 0.78rem;
+  color: #5c6f63;
+}
+
+.macro-vals strong {
+  font-weight: 700;
+}
+
+.macro-bar-bg {
+  width: 100%;
+  height: 7px;
+  background: rgba(31, 111, 59, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.macro-bar-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.macro-pct {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-align: right;
+  opacity: 0.85;
+}

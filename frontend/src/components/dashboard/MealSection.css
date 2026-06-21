@@ -1,0 +1,5 @@
+.meal-section-card { background: var(--color-surface-soft); border: 1px solid var(--color-border); border-radius: 14px; padding: 22px; box-shadow: var(--shadow-card); }
+.meal-section__header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.meal-section__title { font-size: 1rem; font-weight: 700; color: var(--color-text); margin: 0; }
+.meal-section__total { font-size: 0.82rem; font-weight: 600; color: var(--color-primary); background: var(--color-primary-soft); padding: 4px 12px; border-radius: 20px; }
+.meal-section__list { display: flex; flex-direction: column; gap: 10px; }

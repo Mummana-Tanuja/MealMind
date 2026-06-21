@@ -1,0 +1,134 @@
+.mealplan-page {
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  min-height: 100%;
+}
+
+.mealplan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.mealplan-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.mealplan-subtitle {
+  color: var(--color-muted);
+  max-width: 520px;
+  margin: 0;
+}
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.stat-card {
+  background: var(--color-surface-soft);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stat-label {
+  color: var(--color-muted);
+  font-size: 0.82rem;
+}
+
+.meal-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.meal-card {
+  background: var(--color-surface-soft);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: var(--shadow-card);
+}
+
+.meal-card-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.meal-card-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  background: var(--color-primary-soft);
+  border-radius: 12px;
+}
+
+.meal-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 4px 0 0;
+}
+
+.meal-description {
+  color: var(--color-muted);
+  margin-bottom: 16px;
+}
+
+.meal-meta {
+  display: flex;
+  gap: 16px;
+  color: var(--color-text);
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.meal-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+  .nutrition-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .meal-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .mealplan-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nutrition-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .nutrition-grid {
+    grid-template-columns: 1fr;
+  }
+}

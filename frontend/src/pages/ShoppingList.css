@@ -1,0 +1,255 @@
+.shopping-page {
+  width: 100%;
+  padding: 24px;
+  background: rgba(232, 246, 243, 0.62);
+  border-radius: 18px;
+}
+
+.shopping-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.shopping-eyebrow {
+  color: #23834b;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.shopping-header h1 {
+  font-size: 2rem;
+  line-height: 1.1;
+  margin: 0 0 10px;
+}
+
+.shopping-subtitle {
+  color: #5f6b7a;
+  margin: 0;
+  max-width: 680px;
+}
+
+.shopping-budget-pill {
+  min-width: 190px;
+  background: #ffffff;
+  border: 1px solid #d4cfc2;
+  border-radius: 8px;
+  padding: 14px 16px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
+.shopping-budget-pill span,
+.shopping-stat-card span {
+  display: block;
+  color: #6b7280;
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.shopping-budget-pill strong,
+.shopping-stat-card strong {
+  color: #111827;
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.shopping-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.shopping-stat-card,
+.shopping-panel,
+.shopping-action-card {
+  background: #ffffff;
+  border: 1px solid #d4cfc2;
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.05);
+}
+
+.shopping-stat-card {
+  padding: 20px;
+}
+
+.shopping-panel {
+  padding: 22px;
+  margin-bottom: 20px;
+}
+
+.shopping-panel-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.shopping-panel-header h2,
+.shopping-action-card h2 {
+  font-size: 1.15rem;
+  margin: 0 0 8px;
+}
+
+.shopping-panel-header p,
+.shopping-action-card p {
+  color: #6b7280;
+  margin: 0;
+}
+
+.shopping-form {
+  display: grid;
+  grid-template-columns: minmax(180px, 2fr) minmax(140px, 1fr) minmax(120px, 1fr) auto;
+  align-items: end;
+  gap: 14px;
+}
+
+.shopping-form label {
+  color: #374151;
+  display: grid;
+  font-size: 0.9rem;
+  font-weight: 700;
+  gap: 8px;
+}
+
+.shopping-form input {
+  width: 100%;
+  border: 1px solid #cfd6df;
+  border-radius: 8px;
+  color: #111827;
+  font: inherit;
+  min-height: 44px;
+  outline: none;
+  padding: 10px 12px;
+}
+
+.shopping-form input:focus {
+  border-color: #27a854;
+  box-shadow: 0 0 0 3px rgba(39, 168, 84, 0.14);
+}
+
+.shopping-primary-button,
+.shopping-secondary-button,
+.shopping-warning-button,
+.shopping-danger-button,
+.status-pill {
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+  min-height: 38px;
+  padding: 10px 14px;
+}
+
+.shopping-primary-button {
+  background: #27a854;
+  color: #ffffff;
+  min-height: 44px;
+}
+
+.shopping-secondary-button {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.shopping-warning-button {
+  background: #f59e0b;
+  color: #111827;
+}
+
+.shopping-danger-button {
+  background: #fee2e2;
+  color: #b42318;
+}
+
+.shopping-table-wrap {
+  overflow-x: auto;
+}
+
+.shopping-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+}
+
+.shopping-table th,
+.shopping-table td {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 14px 12px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.shopping-table th {
+  background: #f8fafc;
+  color: #475569;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+}
+
+.shopping-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.status-pill {
+  min-width: 106px;
+}
+
+.status-pill.is-purchased {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-pill.is-pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.shopping-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.shopping-action-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 22px;
+}
+
+@media (max-width: 1080px) {
+  .shopping-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .shopping-form,
+  .shopping-actions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .shopping-page {
+    padding: 18px;
+  }
+
+  .shopping-header,
+  .shopping-action-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .shopping-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,133 @@
+.settings-container {
+  min-height: 100vh;
+  background: #F7F5EF;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.settings-card {
+  width: 100%;
+  max-width: 800px;
+  background: white;
+  border-radius: 25px;
+  padding: 35px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.settings-card h1 {
+  text-align: center;
+  color: #1E7A43;
+  margin-bottom: 30px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.section h2 {
+  color: #1E7A43;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 12px;
+  background: #1E7A43;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #166437;
+}
+
+/* Logout button */
+.logout {
+  background: #444;
+}
+
+.logout:hover {
+  background: #000;
+}
+
+/* Danger */
+.danger {
+  border-bottom: none;
+}
+
+.danger-btn {
+  background: #e63946;
+}
+
+.danger-btn:hover {
+  background: #b71c1c;
+}
+
+/* Inputs */
+.section label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 0;
+    font-size: 17px;
+    color: #333;
+    cursor: pointer;
+}
+
+.section input[type="checkbox"],
+.section input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+select, input[type="time"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+select:focus,
+input:focus {
+  border-color: #1E7A43;
+}
+
+.setting-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+    border-bottom:1px solid #f0f0f0;
+}
+
+.setting-row:last-child{
+    border-bottom:none;
+}
+
+.setting-row span{
+    font-size:17px;
+    color:#333;
+    font-weight:500;
+}
+
+.setting-row input{
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}

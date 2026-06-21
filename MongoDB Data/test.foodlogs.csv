@@ -1,0 +1,4 @@
+_id,userId,date,mealType,name,calories,protein,carbs,fat,fibre,quantity,unit,createdAt,updatedAt,__v
+6a365678c325a347538c2c79,6a357d981eebeed3312bed7b,2026-06-20,breakfast,Banana,89,1,23,0,0,1,serving,2026-06-20T08:59:36.813Z,2026-06-20T08:59:36.813Z,0
+6a3661a7c325a347538c2ca8,6a36610ec325a347538c2c99,2026-06-20,breakfast,Banana,89,1,23,0,0,1,serving,2026-06-20T09:47:19.255Z,2026-06-20T09:47:19.255Z,0
+6a36621ac325a347538c2d11,6a36610ec325a347538c2c99,2026-06-20,breakfast,Oats Porridge with Fruits,280,8,48,5,6,1,serving,2026-06-20T09:49:14.019Z,2026-06-20T09:49:14.019Z,0

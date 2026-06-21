@@ -1,0 +1,37 @@
+.social-login{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-top:20px;
+}
+
+.social-btn{
+    width:100%;
+    height:45px;
+    border:1px solid rgba(31, 111, 59, 0.14);
+    border-radius:var(--radius-control);
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    color:white;
+    font-size:15px;
+    font-weight:800;
+    transition:background 0.2s ease, transform 0.2s ease;
+}
+
+.social-btn img{
+    width:22px;
+    height:22px;
+}
+
+.google{
+    background:var(--color-accent);
+}
+
+.google:hover{
+    background:#f5b482;
+    transform:translateY(-1px);
+}
+
